@@ -1,0 +1,177 @@
+@property --percentage {
+  initial-value: 0%;
+  inherits: false;
+  syntax: "<percentage>";
+}
+
+@font-face {
+    font-family: "Uber";
+    src: url("fonts/UberMoveBold.otf");
+}
+
+.icon {
+  background-color: #023;
+  background-image: url("uber.jpg");
+  border-radius: 25%;
+  width: 40vmin;
+  height: 40vmin;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart {
+/*  background: conic-gradient(from -0.25turn at 50%, #023  var(--percentage), white 0);
+*/
+
+ /* background-image: conic-gradient(from -0.25turn at 50%, white var(--percentage), rgba(0,0,0,0) 0);
+  border-radius: 50%;
+  width: 70vmin;
+  height: 70vmin;
+  animation: timer 5s infinite linear forwards;
+    display:  flex;*/
+
+  justify-content: center;
+  align-items: center;
+
+  width: 20vmin;
+  height: 20vmin;
+  font-size: 500%;
+  position: relative;
+  border-radius: 50%;
+ 
+ 
+  color: white;
+  display: flex;
+
+
+}
+
+.chart::before{
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 21vmin 0 0 21vmin;
+  transform-origin: center right;
+  transform: rotate(-90deg); 
+  
+
+}
+
+.chart::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 21vmin 0 0 21vmin;
+  transform-origin: center right;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.chart::before {
+  z-index: 1;
+  background-color: white;
+  animation-name: mask;
+  animation-timing-function: steps(1);
+}
+
+.chart::after {
+  background-color: currentcolor;
+  animation-name: rotate;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  to { transform: rotate(1turn); }
+
+}
+
+@keyframes mask {
+  50%, 100% {
+    background-color: white;
+    transform: rotate(1turn);
+  }
+
+}
+
+.square {
+  z-index: 2;
+  background-color: #124f64;
+  width: 20%;
+  height: 20%;
+  border-radius: 10%;
+  
+}
+
+.rect {
+  z-index: 2;
+  background-color: #124f64;
+  width: 40%;
+  height: 3%;
+}
+
+.rect.white {
+  background-color: white;
+  opacity: 0;
+}
+
+
+@keyframes timer {
+  /*to {
+    --percentage: 100%;
+  }*/
+
+  0% { --percentage: 0% }
+  80% { --percentage: 100% }
+  90% { --percentage: 100% }
+  100% { --percentage: 100% }
+}
+body {
+  
+  
+
+/*color:  #023;*/
+  color: #124f64;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+p{
+font-family: "Uber";
+  font-size: 1.3000em;
+   margin-top: -15%;
+
+}
+
+#loadButton{
+font-family: "Uber";
+font-size: 1.0000em;
+color: #124f64;
+margin-top: -15%;
+cursor: pointer;
+border: 1px solid #124f64;
+border-radius: 8px;
+background-color: white;
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  p{
+    font-size: 2.2000em;
+  margin-top: -100%;
+
+}
+}

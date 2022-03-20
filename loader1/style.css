@@ -1,0 +1,196 @@
+@font-face {
+  font-family: tindr;
+  src: url(fonts/gotham-rounded/GothamRoundedMedium_21022.ttf);
+}
+
+h2{
+  margin-top: 5%;
+  margin-left: 0%;
+  font-family: tindr;
+  font-size: 1.2em;
+ color: #de6366;
+  /*color: black;*/
+  text-align: left;
+  z-index: 1;
+}
+
+#logo{
+  display: inline-block;
+  width:  1.00em;
+  height: 1.00em;
+}
+
+#text2{
+margin-top: 30%; 
+ position: absolute;
+  display: flex;
+  margin-left: 0%;
+
+  
+  
+    /*border-radius: 10%;
+
+  background: #f7e1e4;*/
+}
+
+
+
+
+.circle {
+  background: #456BD9;
+  border-radius: 50%;
+  border: 2px solid #debdc4;
+  background-color: #f7e3e5;
+  opacity: 0.7;
+  height: 9em;
+  position: relative;
+  width: 9em;
+   -webkit-animation: scale 2s linear infinite; /* Safari */
+  animation: scale 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes scale {
+  0% { -webkit-transform: scale(0.5); }
+  100% { -webkit-transform: scale(1); }
+}
+
+@keyframes scale {
+  0% { transform: scale(0.3); }
+  100% { transform: scale(1.1); }
+}
+
+.circle-icon {
+  fill: currentColor;
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  stroke: currentColor;
+  stroke-width: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3em;
+}
+
+.ellipsis-anim span {
+    opacity: 0;
+    -webkit-animation: ellipsis-dot 1s infinite;
+    animation: ellipsis-dot 2.5s infinite;
+}
+
+.ellipsis-anim span:nth-child(1) {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+.ellipsis-anim span:nth-child(2) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.ellipsis-anim span:nth-child(3) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@-webkit-keyframes ellipsis-dot {
+      0% { opacity: 0; }
+     50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes ellipsis-dot {
+      0% { opacity: 0; }
+     50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#googlemaps {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+   /*background: url(map.png);*/
+}
+
+#loadButton{
+  margin-top: 6%;
+  font-family: tindr;
+  font-size: 0.8em;
+ color: #de6366;
+  /*color: black;*/
+  border: 2px solid #debdc4;
+  border-radius: 8px;
+  background-color: #f7e3e5;
+  z-index: 4;
+  cursor: pointer;
+  opacity: 0.8;
+    
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    h2{
+  margin-top: 4%;
+  font-family: tindr;
+  font-size: 0.8em;
+ color: #de6366;
+  /*color: black;*/
+  text-align: left;
+  z-index: 1;
+  margin-left: 0%;
+}
+
+#text2{
+margin-top: 50%; 
+ position: absolute;
+  display: flex;
+   margin-left: 0%;
+
+  
+  
+    /*border-radius: 10%;
+
+  background: #f7e1e4;*/
+}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+       h2{
+  margin-top: 4%;
+  font-family: tindr;
+  font-size: 0.8em;
+ color: #de6366;
+  /*color: black;*/
+  text-align: left;
+  z-index: 4;
+    margin-left: -50%;
+
+}
+
+#text2{
+margin-top: 15%; 
+ position: absolute;
+  display: flex;
+   margin-left: 6%;
+
+  
+  
+    /*border-radius: 10%;
+
+  background: #f7e1e4;*/
+}
+
+}
+
