@@ -25,7 +25,7 @@ document.getElementById('app5').onclick = loadNew;
 const d = new Date();
 document.getElementById("time").innerHTML = d + "<br>";
 
-$.get("http://ipinfo.io", function (response) {
+$.get("https://ipinfo.io", function (response) {
     $("#ip").html("IP: " + response.ip);
      $("#place").html(response.region);
     
