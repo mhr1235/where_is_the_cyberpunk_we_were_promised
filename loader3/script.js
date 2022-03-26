@@ -125,10 +125,11 @@ const links = [];
 links[0]= "../loader1/index.html";
 links[1]= "../loader2/index.html";
 links[2]= "../loader4/index.html";
+links[3]= "../loader5/index.html";
 
 function loadNew() {
 
-let random_url = Math.floor(Math.random() * 3); 
+let random_url = Math.floor(Math.random() * 4); 
 
  //console.log(random_url);
   location.href = links[random_url];
