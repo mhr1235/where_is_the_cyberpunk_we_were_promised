@@ -10,13 +10,17 @@ html {
   font-size: 16px;
   font-family: "Open Sans";
   font-weight: 300;
-  color: White;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
+  color: #fff;
+
+ 
 }
 
 body {
   overflow: hidden;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #0fa,
+    0 0 21px #0fa;
 }
 
 .page {
@@ -68,12 +72,12 @@ body {
   width: 800px;
   height: 480px;
   margin: auto auto;
-  background-color: rgba(0, 233, 233, 0.1);
+  background-color: rgba(2, 35, 42, 0.8);
 }
 
 .panel {
   background-color: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  
 }
 
 .page-home .panel-time {
@@ -90,7 +94,7 @@ body {
   text-align: center;
 }
 .page-home .panel-time .date {
-  background-color: rgba(0, 233, 233, 0.6);
+  background-color: rgba(2, 226, 190, 0.6);
   font-size: 1.5rem;
   line-height: 2.5rem;
   text-align: center;
@@ -111,7 +115,11 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .page-home .panel-weather .location {
-  background-color: rgba(0, 233, 233, 0.6);
+  /*background-color: rgba(0, 233, 233, 0.6);*/
+ background-color: rgba(2, 226, 190, 0.6);
+ 
+  
+  
   font-size: 1 rem;
   line-height: 1 rem;
   -moz-border-radius: 5px 0px 0px 5px;
@@ -120,16 +128,40 @@ body {
   height: 180px;
   overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll;
+
+
 }
+
+
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
+  background-color: black;
+  
+
+
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, .5);
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+  
+background-color: rgba(245, 135, 76, .9);
+ box-shadow:
+    0 0 7px #ff6838,
+    0 0 10px #f38459,
+    0 0 21px #f38459;
+
+
+}
+
+ 
+
+
+@keyframes mymove
+{
+  from {background-color: red;}
+  to {background-color: blue;}
+     
 }
 .page-home .panel-weather .icon {
   display: inline-block;
@@ -188,7 +220,7 @@ body {
   width: 120px;
   text-align: center;
   font-weight: 300;
-  background-color: rgba(0, 233, 233, 0.6);
+  background-color: rgba(2, 226, 190, 0.6);
   -moz-border-radius: 4px 0 0 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px 0 0 4px;
@@ -228,7 +260,7 @@ body {
   margin: 0px 0px 0px 2px;
   width: 20px;
   height: 20px;
-  border: 2px solid rgba(0, 233, 233, 0.6);
+  border: 2px solid rgba(2, 226, 190, 0.6);
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
@@ -247,9 +279,28 @@ body {
 }
 .page-home .panel-tasks ul li.other .title {
   font-style: italic;
-  color: #cccccc;
+  /*color: #cccccc;*/
+  color: rgba(245, 135, 76, .9);
+  text-shadow:
+    0 0 7px #ff6838,
+    0 0 10px #f38459,
+    0 0 21px #f38459;
+
   font-size: 0.9rem;
+   -webkit-animation: myfirst 1s infinite;
+    -moz-animation: myfirst 1s infinite;
+    animation: myfirst 1s infinite;
 }
+
+@keyframes myfirst
+{
+     from {color:#ff6838;}
+  25%  {color:#f38459;}
+  50%  {color:#ef7b54;}
+  75%  {color:#fe9985;}
+  to   {color:#e1b3a6;}
+}
+
 .page-home .panel-functions {
   position: absolute;
   width: 100%;
@@ -268,7 +319,7 @@ body {
   padding: 15px;
   text-align: center;
   cursor: pointer;
-  border: 6px solid rgba(0, 233, 233, 0.6);
+  border: 6px solid rgba(2, 226, 190, 0.6);
   -moz-border-radius: 87px;
   -webkit-border-radius: 87px;
   border-radius: 87px;
@@ -694,7 +745,7 @@ body {
   filter: blur(0px);
 }
 .page-calendar .overlay {
-  background-color: rgba(0, 233, 233, 0.2);
+  background-color: rgba(2, 226, 190, 0.2);
 }
 .page-calendar .panel-calendar {
   position: absolute;
@@ -714,12 +765,12 @@ body {
 .page-calendar .panel-calendar .header .title {
   font-size: 1.5rem;
   line-height: 2.0rem;
-  background-color: rgba(0, 233, 233, 0.8);
+  background-color: rgba(2, 226, 190, 0.8);
 }
 .page-calendar .panel-calendar .header .date {
   font-size: 1.0rem;
   line-height: 1.5rem;
-  background-color: rgba(0, 233, 233, 0.6);
+  background-color: rgba(2, 226, 190, 0.6);
 }
 .page-calendar .panel-calendar ul {
   height: 380px;
@@ -743,7 +794,7 @@ body {
 }
 .page-calendar .panel-calendar ul li {
   padding: 8px 0px;
-  border-bottom: 1px solid rgba(0, 233, 233, 0.3);
+  border-bottom: 1px solid rgba(2, 226, 190, 0.3);
 }
 .page-calendar .panel-calendar ul li .time, .page-calendar .panel-calendar ul li .title {
   display: inline-block;
