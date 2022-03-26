@@ -30,12 +30,13 @@ const links = [];
 links[0]= "../loader1/index.html";
 links[1]= "../loader2/index.html";
 links[2]= "../loader3/index.html";
+links[3]= "../loader5/index.html";
 
-setTimeout(() => {document.getElementById('load').innerHTML ='<button ' + 'onclick= '+ '"loadNew()"' +' id=' +'"loadButton"' + '>' +'find a ride' +'</button>'}, 15000);
+setTimeout(() => {document.getElementById('load').innerHTML ='<button ' + 'onclick= '+ '"loadNew()"' +' id=' +'"loadButton"' + '>' +'find a ride' +'</button>'}, 5000);
 
 function loadNew() {
 
-let random_url = Math.floor(Math.random() * 3); 
+let random_url = Math.floor(Math.random() * 4); 
 
  //console.log(random_url);
   location.href = links[random_url];
