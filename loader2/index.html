@@ -314,19 +314,20 @@ const links = [];
 links[0]= "../loader1/index.html";
 links[1]= "../loader3/index.html";
 links[2]= "../loader4/index.html";
+links[3]= "../loader5/index.html";
   
 
      //setTimeout(() => {document.getElementById('load').innerHTML ="changing text"; }, 10000);
 /*setTimeout(() => {document.getElementById('load').innerHTML ='<button'+'"location.href = '+"'https://www.google.com/'"+';"' + 'id=' +'loadButton' + '>load</button>'}, 20000);*/
 
-setTimeout(() => {document.getElementById('load').innerHTML ='<button ' + 'onclick= '+ '"loadNew()"' +' id=' +'"loadButton"' + '>' +'load inbox' +'</button>'}, 15000);
+setTimeout(() => {document.getElementById('load').innerHTML ='<button ' + 'onclick= '+ '"loadNew()"' +' id=' +'"loadButton"' + '>' +'load inbox' +'</button>'}, 5000);
 
 //setTimeout(() => {document.getElementById('load').innerHTML ='<button onclick='+'"location.href = '+"'https://www.google.com/'"+';"' + 'id=' +'loadButton' +'class=' +'msg' + '>load</button>'}, 20000);
 
 
 function loadNew() {
 
-let random_url = Math.floor(Math.random() * 3); 
+let random_url = Math.floor(Math.random() * 4); 
 
  //console.log(random_url);
   location.href = links[random_url];
